@@ -23,6 +23,7 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/litmuschaos/litmusctl/pkg/cmd/delete"
 	"github.com/litmuschaos/litmusctl/pkg/cmd/upgrade"
 	"github.com/litmuschaos/litmusctl/pkg/cmd/version"
 	"github.com/litmuschaos/litmusctl/pkg/utils"
@@ -58,6 +59,7 @@ func init() {
 	rootCmd.AddCommand(config.ConfigCmd)
 	rootCmd.AddCommand(create.CreateCmd)
 	rootCmd.AddCommand(get.GetCmd)
+	rootCmd.AddCommand(delete.DeleteCmd)
 	rootCmd.AddCommand(version.VersionCmd)
 	rootCmd.AddCommand(upgrade.UpgradeCmd)
 
